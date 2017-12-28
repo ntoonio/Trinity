@@ -1,0 +1,45 @@
+<html>
+	<body>
+		<div id="content">
+			<canvas id="c" width="100" height="1000"></canvas>
+			<div>
+				<h2>Attribut</h2>
+				<input id="attributeInputField">
+				<button id="addAttributeButton" onclick="addAttributeButtonPressed()">Add</button>
+				<ul id="attributes">
+					
+				</ul>
+				<h2>Values</h2>
+				<p>Convert: <input id="convertCheckBox" type="checkbox" onclick="update()" checked="true"></p>
+				<div id="valueFields"></div>
+				<ul id="values">
+				</ul>
+				<button id="addValueButton" onclick="addValueButtonPressed()">Add</button>
+			</div>
+		</div>
+		<script src="polygon.js"></script>
+		<script src="ui.js"></script>
+	</body>
+</html>
+
+<style>
+	body {
+		background-color: lightblue;
+		margin: 0;
+	}
+
+	#content canvas, #content div, #valueFields * {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0;
+	}
+	
+	#attributes li p {
+		background-color: white;
+		padding: 1;
+	}
+
+	canvas {
+		background-color: white;
+	}
+</style>
